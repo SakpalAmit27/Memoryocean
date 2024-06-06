@@ -1,0 +1,85 @@
+/* Login.css */
+
+.whole {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../../assets/login-background.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .login-form {
+    width: 100%;
+    max-width: 500px; /* Ensure the form doesn't exceed 500px in width */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.8); /* Add a white background with opacity to the form */
+    margin-top: 20px;
+  }
+  
+  .logo-id {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Reduce margin-bottom */
+  }
+  
+  .logo-img {
+    width: 300px; /* Maintain the logo width */
+    height: auto;
+  }
+  
+  .login-input {
+    width: 100%;
+    font-size: 1rem; /* Ensure the input text is readable */
+  }
+  
+  .login-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    max-width: 300px; /* Ensure buttons don't exceed 300px */
+    width: 100%;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .login-form {
+      padding: 10px;
+    }
+  
+    .logo-img {
+      width: 250px; /* Slightly adjust the logo size for smaller screens */
+    }
+  
+    .login-input {
+      font-size: 0.9rem; /* Reduce font size for inputs on smaller screens */
+    }
+  
+    .login-button {
+      font-size: 0.9rem; /* Reduce button font size for smaller screens */
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-form {
+      padding: 10px;
+      max-width: 100%; /* Make the form take full width */
+    }
+  
+    .logo-img {
+      width: 200px; /* Slightly adjust the logo size for very small screens */
+    }
+  
+    .login-input {
+      font-size: 0.8rem; /* Further reduce font size for inputs */
+    }
+  
+    .login-button {
+      font-size: 0.8rem; /* Further reduce button font size */
+      padding: 6px 12px;
+    }
+  }
+  
