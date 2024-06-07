@@ -3,9 +3,23 @@ import { Box, Button, Image, Input, Stack, VStack, Center, Text } from '@chakra-
 import website_icon from '../../assets/icon.png';
 import login_background from '../../assets/login-background.png';
 
+
+
+  // to store the value taken from onchange input field // 
+
+  const signupinitialValue = {
+    name : '',
+    email : '', 
+    password : ''
+  }
+
 const Login = () => {
   // Creating toggle to switch between login and create account
   const [account, toggleAccount] = useState('login');
+  // storing value with useState //
+
+  const [signup,setSignup] = useState(signupinitialValue)
+
 
   // Function to toggle between 'login' and 'create account'
   const handleToggleAccount = () => {
@@ -13,8 +27,14 @@ const Login = () => {
   };
 
   const onInputChange = (e)=>{ 
-    console.log(e.target.name,e.target.value)
+
+    // appending the values //
+    // e.name is our key now .. //
+    setSignup({...signup,[e.target.name]:e.target.value})
   }
+  // creating backend after this to store data //
+
+  
 
   return (
     <>
